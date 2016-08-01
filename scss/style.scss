@@ -1,0 +1,32 @@
+$nonMarkedColor: #6699ff;
+$markedColor: #33cc33;
+ 
+$width: 43%;
+$height: 90%;
+
+$margin: 25px 40px;
+$marginForLeftSide: 55%;
+
+.header {
+  display: block;
+  width: 21%;
+  margin: 0 auto;
+}
+
+.nonmarked {
+  position: absolute;
+  min-width: $width;
+  max-width: $width;
+  height: $height;
+  margin: $margin;
+  padding: 5px 0 0 10px;
+  
+  
+}
+  
+.marked {
+  @extend .nonmarked;
+  margin-left: $marginForLeftSide;
+}
+
+
